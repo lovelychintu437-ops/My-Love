@@ -82,7 +82,9 @@ button{
 </head>
 
 <body>
-
+  <audio id="bgMusic" autoplay loop muted>
+  <source src="romantic.mp3" type="audio/mpeg">
+</audio>
 <div class="container">
   <h1>Hey Ammaduu 🥰<br>Will you be my Valentine? 💖</h1>
 
@@ -117,6 +119,13 @@ function heart(){
 }
 setInterval(heart,250);
 </script>
+<script>
+const music = document.getElementById("bgMusic");
 
+document.addEventListener("click", function () {
+  music.muted = false;
+  music.play();
+}, { once: true });
+</script>
 </body>
 </html>
