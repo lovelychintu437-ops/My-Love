@@ -8,14 +8,17 @@
 body{
   margin:0;
   min-height:100vh;
-  overflow-x:hidden;
-  display:block;
   background: linear-gradient(-45deg,#ff758c,#ff7eb3,#ff9a9e,#fad0c4);
   background-size:400% 400%;
   animation: gradientMove 12s ease infinite;
   font-family:'Segoe UI',sans-serif;
   color:white;
   text-align:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  overflow-x:hidden;
 }
 
 @keyframes gradientMove{
@@ -26,7 +29,9 @@ body{
 
 .box{
   max-width:650px;
+  width:100%;
   padding:30px;
+  margin:60px 20px;
   animation:fadeIn 2s ease;
 }
 
